@@ -1,109 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        a {
-            color: white;
-            text-decoration: none;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        #name {
-            position: absolute;
-            right: 10vw;
-        }
-
-        header {
-            background-color: rgb(76, 20, 129);
-            padding: 5vh;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            position: sticky;
-            top: 0;
-        }
-
-        #hc {
-            line-height: 30px;
-        }
-
-        section {
-            line-height: 24px;
-        }
-
-        li {
-            display: inline;
-            padding-left: 4vw;
-            padding-right: 4vw;
-        }
-
-        .home {
-            height: 86vh;
-            background-color: blueviolet;
-            display: flex;
-            justify-content: space-around;
-            align-content: center;
-        }
-
-        .homecontent {
-            width: 40vw;
-            color: white;
-            display: inline-block;
-            align-self: center;
-        }
-
-        p {
-            padding: 71px 0;
-            color: black;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 5px 20px;
-            margin: 0 20px;
-            position: relative;
-            left: 5vw;
-            border: 3px solid black;
-            background-color: rgb(76, 20, 129);
-        }
-    </style>
+    <title>Pranav's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
     <header>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
         <nav>
-            <ul>
-                <li><u style="text-decoration-color:yellow ;">Home</u></li>
-                <li><a href="hobbies.html">My Hobbies</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li id="name">Pranav Bansal</li>
-            </ul>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
-    </header>
-    <section class="home">
-        <div class="homecontent">
-            <h1 id="hc">Hi, My name is Pranav Bansal, currently an undergraduate at NSUT. My branch is EIOT.</h1>
-            <p>I live in Karnal, Haryana. Just transitioned from school to college life. Things are a little hectic
-                because we have to cover our syllabus in less time, thanks to corona, and of course 10 to 7 online
-                classes. Recently stepped into coding world and I am really liking it. Hope you like my first website!!!
-            </p>
-            <a class="button" href="hobbies.html">My Hobbies</a>
-            <a class="button" href="skills.html">Skills</a>
+    </header>    
 
-        </div>
-        <div class="homecontent"><img src="photo-modified.png" alt="Profile photo"></div>
-    </section>
+    <main>
+        <section class="home" id="home">
+            <div class="left-home">
+                <div><p><h1>Hello!! I am Pranav Bansal</h1></div>
+                <div>Welcome to my <span class="blue" id="stroke">Portfolio website</span><br></div>
+                <div>Hope you like it  <span class="up">:</span>)</p></div>
+
+                <div class="home-profile">
+                    <a href="https://www.linkedin.com/in/pranav-bansal-3964b222a/"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.instagram.com/pranavbansal_57/"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://github.com/Pranav-Bansal-1?tab=overview&from=2023-07-01&to=2023-07-08"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+            <div class="right-home">
+                <img src="developer2.png" alt="animated developer">
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="about-heading">About <span class="blue">Me</span></h2>
+            <div class="left-about">
+                <img src="about_portfolio-modified-removebg.png" alt="Profile Photo" class="about-image">
+            </div>
+            <div class="content-about">
+                <p>
+                    I am currently a third-year student at Netaji Subhas Institute of Technology, situated in Delhi, where I am pursuing my B.Tech in Electronics and Communication Engineering with specialization in IoT. I really enjoy exploring the realm of web development and actively engage in competitive programming as well. Additionally, I have a keen interest in sports such as Badminton, Table Tennis, and Chess. I am eagerly looking forward to expanding my knowledge and fresh experiences that come my way.
+                </p>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>My <span class="blue">Skills</span></h2>
+            <div class="skills-col">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>HTML<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>CSS<span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>JavaScript<span>55%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>C++<span>85%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact <span class="blue">Me!</span></h2>
+
+            <form action="#" id="sugForm">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email Address" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+
+                <div class="textarea-field">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message/Suggestion" required></textarea>
+                </div>
+                <div class="btn-box">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
